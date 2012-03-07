@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 27.875, 35" name="pisModel">
+  <DataContextMoniker Name="/pisModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="da352475-d439-4f96-a3a6-53fa882a1243" absoluteBounds="13.75, 16.25, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/pisModelDataContext/artikli" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1614d75-fb1d-4653-ab86-664d17e32d37" absoluteBounds="13.765, 16.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7bb6ddf9-486e-4677-b44c-1b71b6cee3f2" absoluteBounds="11, 16.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/pisModelDataContext/jedinica_mjere" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df0d7fdd-5827-4c38-99ae-1ef34fab48b4" absoluteBounds="11.015, 17.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7090503d-fe88-47cf-bfce-d12bace8feef" absoluteBounds="16.75, 28.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/otpremnica_od_dobavljaca" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5141b21-029a-4af8-bdd7-6d5bd085dbc0" absoluteBounds="16.765, 28.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ced0f5a9-57dd-431d-bb83-87fa43c25699" absoluteBounds="19.75, 7.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/racun_od_dobavljaca" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f239268b-3891-42c0-ba85-ed361647846f" absoluteBounds="19.765, 7.8350000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13 : 17.2219962565104); (13.75 : 17.2219962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/jedinica_mjere/jedinica_mjere_artikli" />
+      <nodes>
+        <classShapeMoniker Id="7bb6ddf9-486e-4677-b44c-1b71b6cee3f2" />
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6668a134-603a-4dd0-b11d-a3c5c50d6c43" absoluteBounds="20.5, 26.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/pisModelDataContext/primka" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f8b3559-397a-4227-b97e-da1b106c62cf" absoluteBounds="20.515, 26.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ef83e0a3-95d3-4b40-9881-eadc71f3db44" absoluteBounds="10.625, 11, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/pisModelDataContext/izdatnica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8258759-874a-4897-9d9b-06588fd19ebe" absoluteBounds="10.64, 11.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="992abe5a-c874-4c1e-bea8-83aedf99b900" absoluteBounds="18.375, 5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/pisModelDataContext/otpremnica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="578b54a2-4b66-454f-82af-45443258dafd" absoluteBounds="18.39, 5.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b339f07-b4f3-4421-9fd0-d7f2696ac540" absoluteBounds="16.375, 25.25, 2, 1.9631982421875">
+      <DataClassMoniker Name="/pisModelDataContext/narudzbenica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8aa0c0ef-385b-4482-bdb4-53aa9395d1c4" absoluteBounds="16.39, 25.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="246af64c-29f9-431b-b256-408dc44cf113" absoluteBounds="12.75, 25.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/pisModelDataContext/organizacijska_jedinica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d21fa61-68d9-43ad-aed0-b4d637aebdf2" absoluteBounds="12.765, 25.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.75 : 26.0969962565104); (16.375 : 26.0969962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/organizacijska_jedinica/organizacijska_jedinica_narudzbenica" />
+      <nodes>
+        <classShapeMoniker Id="246af64c-29f9-431b-b256-408dc44cf113" />
+        <classShapeMoniker Id="3b339f07-b4f3-4421-9fd0-d7f2696ac540" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d8d0d8fd-b73b-4c9c-aeba-f5f6342ff863" absoluteBounds="17.75, 3, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/korisnici" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c27655d0-1874-4c0e-a456-d1b022271b7a" absoluteBounds="17.765, 3.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c55efe1e-f687-4cf1-9f4c-899e44b5207e" absoluteBounds="24.125, 13.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_racuna_od_dobavljaca" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e50e1b5-7431-4b02-a6cb-b971da53d88d" absoluteBounds="24.14, 14.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.75 : 16.3261690625); (23.3854166666667 : 16.3261690625 : JumpStart); (23.5520833333333 : 16.3261690625 : JumpEnd); (25.125 : 16.3261690625); (25.125 : 15.2035953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_racuna_od_dobavljaca" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="c55efe1e-f687-4cf1-9f4c-899e44b5207e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(21.75 : 8.16429768880208); (25.125 : 8.16429768880208); (25.125 : 13.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/racun_od_dobavljaca/racun_od_dobavljaca_stavke_racuna_od_dobavljaca" />
+      <nodes>
+        <classShapeMoniker Id="ced0f5a9-57dd-431d-bb83-87fa43c25699" />
+        <classShapeMoniker Id="c55efe1e-f687-4cf1-9f4c-899e44b5207e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="74a4a2c3-c631-43ed-b053-2f28d7b36957" absoluteBounds="21.375, 17, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_primke" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecae349c-68d5-4d17-9efe-699cae5a4f46" absoluteBounds="21.39, 17.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.75 : 17.5104484049479); (18.5104166666667 : 17.5104484049479 : JumpStart); (18.6770833333333 : 17.5104484049479 : JumpEnd); (21.375 : 17.5104484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_primke" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="74a4a2c3-c631-43ed-b053-2f28d7b36957" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.34375 : 26.375); (22.34375 : 18.5785953776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/pisModelDataContext/primka/primka_stavke_primke" />
+      <nodes>
+        <classShapeMoniker Id="6668a134-603a-4dd0-b11d-a3c5c50d6c43" />
+        <classShapeMoniker Id="74a4a2c3-c631-43ed-b053-2f28d7b36957" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="56060ed7-c1ce-42f3-a8f4-f09cb32d955d" absoluteBounds="9.5, 13.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_izdatnice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d3e7522-117d-4114-8703-9333c3ad29f8" absoluteBounds="9.515, 13.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.0468725 : 16.25); (14.0468725 : 14.6723453776042); (11.5 : 14.6723453776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_izdatnice" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="56060ed7-c1ce-42f3-a8f4-f09cb32d955d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.0625 : 12.7708968098958); (11.0625 : 13.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/izdatnica/izdatnica_stavke_izdatnice" />
+      <nodes>
+        <classShapeMoniker Id="ef83e0a3-95d3-4b40-9881-eadc71f3db44" />
+        <classShapeMoniker Id="56060ed7-c1ce-42f3-a8f4-f09cb32d955d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3d6a257e-544f-4766-88a3-e7254aaf9a76" absoluteBounds="21.5, 13.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_otpremnice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="431a566a-04c7-4cb6-b565-34138808838a" absoluteBounds="21.515, 14.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.75 : 16.464843125); (23.46875 : 16.464843125); (23.46875 : 15.2035953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_otpremnice" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="3d6a257e-544f-4766-88a3-e7254aaf9a76" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.25 : 6.3862939453125); (19.25 : 13.90625); (21.5 : 13.90625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/otpremnica/otpremnica_stavke_otpremnice" />
+      <nodes>
+        <classShapeMoniker Id="992abe5a-c874-4c1e-bea8-83aedf99b900" />
+        <classShapeMoniker Id="3d6a257e-544f-4766-88a3-e7254aaf9a76" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f9d3bc57-bc19-422c-b643-b99d8923961d" absoluteBounds="16.75, 14.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/pisModelDataContext/nalog_za_nabavu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10b5df5a-090e-48f6-9aa2-e1d29eabfc61" absoluteBounds="16.765, 14.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="515faeb3-8c47-4850-b602-8d93f383823c" absoluteBounds="16.375, 12.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_naloga_za_nabavu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a44dafb-6c15-4f34-af35-1e8867b32c4a" absoluteBounds="16.39, 12.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.136719375 : 16.25); (15.136719375 : 12.9142976888021); (15.4166666666667 : 12.9142976888021 : JumpStart); (15.5833333333333 : 12.9142976888021 : JumpEnd); (16.375 : 12.9142976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_naloga_za_nabavu" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="515faeb3-8c47-4850-b602-8d93f383823c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.5625 : 14.25); (17.5625 : 13.7035953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/nalog_za_nabavu/nalog_za_nabavu_stavke_naloga_za_nabavu" />
+      <nodes>
+        <classShapeMoniker Id="f9d3bc57-bc19-422c-b643-b99d8923961d" />
+        <classShapeMoniker Id="515faeb3-8c47-4850-b602-8d93f383823c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="78db1dc7-3a5e-428e-8dd6-aa0cee7d9f6a" absoluteBounds="25.625, 23.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_narudzbenice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c8efc52-3e9e-4c87-ba3d-b88c425665a2" absoluteBounds="25.64, 24.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.75 : 16.6621103125); (27.03125 : 16.6621103125); (27.03125 : 23.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_narudzbenice" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="78db1dc7-3a5e-428e-8dd6-aa0cee7d9f6a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18.375 : 25.8830481888021); (20.1979166666667 : 25.8830481888021 : JumpStart); (20.3645833333333 : 25.8830481888021 : JumpEnd); (22.2604166666667 : 25.8830481888021 : JumpStart); (22.4270833333333 : 25.8830481888021 : JumpEnd); (26.625 : 25.8830481888021); (26.625 : 25.4535953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/narudzbenica/narudzbenica_stavke_narudzbenice" />
+      <nodes>
+        <classShapeMoniker Id="3b339f07-b4f3-4421-9fd0-d7f2696ac540" />
+        <classShapeMoniker Id="78db1dc7-3a5e-428e-8dd6-aa0cee7d9f6a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0c62dea6-ebf4-4ac4-bef1-3fc8a6c5498b" absoluteBounds="19.75, 33.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_prednaloga_za_nabavu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53b17777-d989-4e44-8f9b-6f6b5c0540dd" absoluteBounds="19.765, 33.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.1718765 : 18.0208968098958); (15.1718765 : 22.125); (15.75 : 22.125); (15.75 : 33.9142976888021); (19.75 : 33.9142976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_prednaloga_za_nabavu" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="0c62dea6-ebf4-4ac4-bef1-3fc8a6c5498b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9de35d95-6e05-434c-9f48-4457a781707a" absoluteBounds="23.5, 31.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/pisModelDataContext/prednalog_za_nabavu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b8f62bc-fb19-448c-9375-05a2200d45e9" absoluteBounds="23.515, 31.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(23.5 : 31.8181469726563); (20.75 : 31.8181469726563); (20.75 : 33.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/prednalog_za_nabavu/prednalog_za_nabavu_stavke_prednaloga_za_nabavu" />
+      <nodes>
+        <classShapeMoniker Id="9de35d95-6e05-434c-9f48-4457a781707a" />
+        <classShapeMoniker Id="0c62dea6-ebf4-4ac4-bef1-3fc8a6c5498b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="152bd4c3-4cf6-475c-96ca-24038c637aaa" absoluteBounds="10.25, 20.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/nalog_za_skladistenje" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53bcae19-8f9b-49b5-a031-6bccf81b8b14" absoluteBounds="10.265, 21.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(12.75 : 26.0969962565104); (11.09375 : 26.0969962565104); (11.09375 : 22.3285953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/organizacijska_jedinica/organizacijska_jedinica_nalog_za_skladistenje" />
+      <nodes>
+        <classShapeMoniker Id="246af64c-29f9-431b-b256-408dc44cf113" />
+        <classShapeMoniker Id="152bd4c3-4cf6-475c-96ca-24038c637aaa" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="eddbd115-4e45-43bf-8ed8-86be9f3796ae" absoluteBounds="15.625, 19.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_naloga_za_skladistenje" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3386f99-4523-4e16-a38c-0f703487def3" absoluteBounds="15.64, 20.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.203122 : 18.0208968098958); (14.203122 : 20.5392976888021); (15.625 : 20.5392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_naloga_za_skladistenje" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="eddbd115-4e45-43bf-8ed8-86be9f3796ae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.25 : 21.0392976888021); (13.8619751666667 : 21.0392976888021 : JumpStart); (14.0286418333333 : 21.0392976888021 : JumpEnd); (15.0885431666667 : 21.0392976888021 : JumpStart); (15.2552098333333 : 21.0392976888021 : JumpEnd); (15.625 : 21.0392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/nalog_za_skladistenje/nalog_za_skladistenje_stavke_naloga_za_skladistenje" />
+      <nodes>
+        <classShapeMoniker Id="152bd4c3-4cf6-475c-96ca-24038c637aaa" />
+        <classShapeMoniker Id="eddbd115-4e45-43bf-8ed8-86be9f3796ae" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4ae70350-89e7-44a3-9edb-7c579ade31aa" absoluteBounds="15.25, 9.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_zahtjevnice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0bee22b3-464c-4e1b-bf87-daee189ed069" absoluteBounds="15.265, 9.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.5 : 16.25); (15.5 : 10.9535953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_zahtjevnice" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="4ae70350-89e7-44a3-9edb-7c579ade31aa" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d9023d1d-8418-4144-9b97-e20be9fd7679" absoluteBounds="12.75, 7.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/zahtjevnica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88cd58c4-b887-4c6b-b748-2ddf62105f53" absoluteBounds="12.765, 7.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.75 : 8.70359537760417); (15.25 : 9.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/zahtjevnica/zahtjevnica_stavke_zahtjevnice" />
+      <nodes>
+        <classShapeMoniker Id="d9023d1d-8418-4144-9b97-e20be9fd7679" />
+        <classShapeMoniker Id="4ae70350-89e7-44a3-9edb-7c579ade31aa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.625 : 11); (11.625 : 7.91429768880208); (12.75 : 7.91429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/izdatnica/izdatnica_zahtjevnica" />
+      <nodes>
+        <classShapeMoniker Id="ef83e0a3-95d3-4b40-9881-eadc71f3db44" />
+        <classShapeMoniker Id="d9023d1d-8418-4144-9b97-e20be9fd7679" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="12c972f5-3201-4ac9-88cc-a84bf447a094" absoluteBounds="23.5, 21.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/pisModelDataContext/skladisnica" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1c3f461-95d8-43ad-afac-1e4572dd7cb9" absoluteBounds="23.515, 21.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5de51597-8b90-43cb-9d1c-5017a23142ad" absoluteBounds="24.375, 19, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_skladisnice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f58644b-8567-48a9-9e2d-c8b6f18a56be" absoluteBounds="24.39, 19.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.68749925 : 18.0208968098958); (14.68749925 : 19.34375); (15.0885431666667 : 19.34375 : JumpStart); (15.2552098333333 : 19.34375 : JumpEnd); (18.5104166666667 : 19.34375 : JumpStart); (18.6770833333333 : 19.34375 : JumpEnd); (22.2604166666667 : 19.34375 : JumpStart); (22.4270833333333 : 19.34375 : JumpEnd); (24.375 : 19.34375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_skladisnice" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="5de51597-8b90-43cb-9d1c-5017a23142ad" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(24.9375 : 21.5); (24.9375 : 20.5785953776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/skladisnica/skladisnica_stavke_skladisnice" />
+      <nodes>
+        <classShapeMoniker Id="12c972f5-3201-4ac9-88cc-a84bf447a094" />
+        <classShapeMoniker Id="5de51597-8b90-43cb-9d1c-5017a23142ad" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e95c6e18-cfb6-4a69-8b4d-297c3432ca39" absoluteBounds="16, 6.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/pisModelDataContext/potvrda_o_uskladistenom_materijalu_za_sitotisak" />
+      <nestedChildShapes>
+        <elementListCompartment Id="feaf63aa-94c7-4cd3-b773-77167ec1e0cb" absoluteBounds="16.015, 7.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f57a4793-c8eb-4d6f-8a39-77d6da43b644" absoluteBounds="12.375, 22.375, 3.125, 1.3862939453125">
+      <DataClassMoniker Name="/pisModelDataContext/potvrda_o_uskladistenom_materijalu_za_ostale_poslove" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8516906b-b774-418e-afbf-184800f17411" absoluteBounds="12.39, 22.835, 3.0949999999999998, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="022adb99-c9a7-44f4-bedc-44a08697abf1" absoluteBounds="17.75, 22.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10cb35af-eec9-43b8-9873-dc0c550174af" absoluteBounds="17.765, 22.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(15.75 : 17.184912952474); (18.59375 : 17.184912952474); (18.59375 : 22.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="022adb99-c9a7-44f4-bedc-44a08697abf1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.5 : 23.1306469726563); (17.75 : 23.1306469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/potvrda_o_uskladistenom_materijalu_za_ostale_poslove/potvrda_o_uskladistenom_materijalu_za_ostale_poslove_stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" />
+      <nodes>
+        <classShapeMoniker Id="f57a4793-c8eb-4d6f-8a39-77d6da43b644" />
+        <classShapeMoniker Id="022adb99-c9a7-44f4-bedc-44a08697abf1" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2b39277e-280c-4034-910f-4302b2a53eea" absoluteBounds="20.5, 10.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9e1e4f1-8def-4c57-909e-c51a83a1f5b8" absoluteBounds="20.515, 10.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.5917959375 : 16.25); (14.5917959375 : 11.4848453776042); (15.4166666666667 : 11.4848453776042 : JumpStart); (15.5833333333333 : 11.4848453776042 : JumpEnd); (19.1666666666667 : 11.4848453776042 : JumpStart); (19.3333333333333 : 11.4848453776042 : JumpEnd); (20.5 : 11.4848453776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="2b39277e-280c-4034-910f-4302b2a53eea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.65625 : 8.1362939453125); (17.65625 : 11.2192178776042); (19.1666666666667 : 11.2192178776042 : JumpStart); (19.3333333333333 : 11.2192178776042 : JumpEnd); (20.5 : 11.2192178776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/pisModelDataContext/potvrda_o_uskladistenom_materijalu_za_sitotisak/potvrda_o_uskladistenom_materijalu_za_sitotisak_stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" />
+      <nodes>
+        <classShapeMoniker Id="e95c6e18-cfb6-4a69-8b4d-297c3432ca39" />
+        <classShapeMoniker Id="2b39277e-280c-4034-910f-4302b2a53eea" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2abfc17c-96f2-47da-8a19-91ddf51a5ff7" absoluteBounds="20.125, 20, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/pisModelDataContext/stavke_otpremnice_od_dobavljaca" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1eaf41a6-251e-4176-9fbb-9fdacafe6f44" absoluteBounds="20.14, 20.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.9453085 : 18.0208968098958); (13.9453085 : 21.4848453776042); (15.0885431666667 : 21.4848453776042 : JumpStart); (15.2552098333333 : 21.4848453776042 : JumpEnd); (18.5104166666667 : 21.4848453776042 : JumpStart); (18.6770833333333 : 21.4848453776042 : JumpEnd); (20.125 : 21.4848453776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/pisModelDataContext/artikli/artikli_stavke_otpremnice_od_dobavljaca" />
+      <nodes>
+        <classShapeMoniker Id="da352475-d439-4f96-a3a6-53fa882a1243" />
+        <classShapeMoniker Id="2abfc17c-96f2-47da-8a19-91ddf51a5ff7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18.75 : 29.1642976888021); (20.28125 : 29.1642976888021); (20.28125 : 21.5785953776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/pisModelDataContext/otpremnica_od_dobavljaca/otpremnica_od_dobavljaca_stavke_otpremnice_od_dobavljaca" />
+      <nodes>
+        <classShapeMoniker Id="7090503d-fe88-47cf-bfce-d12bace8feef" />
+        <classShapeMoniker Id="2abfc17c-96f2-47da-8a19-91ddf51a5ff7" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,27 @@
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\WindowMain.baml
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\WindowMain.g.cs
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\App.g.cs
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\BarcodeReport_Content.g.cs
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\BarcodeReport_MarkupCompile.cache
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\BarcodeReport.g.resources
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\BarcodeReport.Properties.Resources.resources
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\ResGen.read.1.tlog
+C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\obj\Debug\ResGen.write.1.tlog
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\bin\Debug\Templates\BarcodeReport.xaml
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\bin\Debug\BarcodeReport.exe
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\bin\Debug\BarcodeReport.pdb
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\bin\Debug\CodeReason.Reports.dll
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\bin\Debug\CodeReason.Reports.pdb
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\WindowMain.baml
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\WindowMain.g.cs
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\App.g.cs
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\BarcodeReport_Content.g.cs
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\BarcodeReport_MarkupCompile.cache
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\BarcodeReport.g.resources
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\BarcodeReport.Properties.Resources.resources
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\ResGen.read.1.tlog
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\ResGen.write.1.tlog
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\BarcodeReport.exe
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\BarcodeReport\obj\Debug\BarcodeReport.pdb

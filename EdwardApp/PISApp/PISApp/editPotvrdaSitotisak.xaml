@@ -1,0 +1,14 @@
+﻿<Window x:Class="PISApp.editPotvrdaSitotisak"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="editPotvrdaSitotisak" Height="248" Width="223">
+    <Grid>
+        <Button Content="Spremi" Height="34" HorizontalAlignment="Left" Margin="45,157,0,0" Name="addButton" VerticalAlignment="Top" Width="106" Click="addButton_Click" />
+        <Label Content="Datum" Height="28" HorizontalAlignment="Left" Margin="13,52,0,0" Name="Datum" VerticalAlignment="Top" />
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="10,75,0,0" Name="datumPicker" VerticalAlignment="Top" Width="179" />
+        <Label Content="Odgovorna osoba" Height="28" HorizontalAlignment="Left" Margin="10,104,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="10,128,0,0" Name="odgOsoba" VerticalAlignment="Top" Width="179" />
+        <Label Content="ID Potvrde" Height="28" HorizontalAlignment="Left" Margin="12,10,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="10,32,0,0" Name="idBox" VerticalAlignment="Top" Width="179" />
+    </Grid>
+</Window>

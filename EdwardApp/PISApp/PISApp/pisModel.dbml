@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TechClubDB" Class="pisModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=IVAN-PC\sqlexpress;Initial Catalog=TechClubDB;Integrated Security=True;Pooling=False" SettingsObjectName="PISApp.Properties.Settings" SettingsPropertyName="TechClubDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.artikli" Member="artiklis">
+    <Type Name="artikli">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="naziv" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[jedinicna cijena]" Member="jedinicna_cijena" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vrsta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="id_jedinice_mjere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_racuna_od_dobavljaca" Member="stavke_racuna_od_dobavljacas" ThisKey="id" OtherKey="id_artikla" Type="stavke_racuna_od_dobavljaca" />
+      <Association Name="artikli_stavke_primke" Member="stavke_primkes" ThisKey="id" OtherKey="id_artikla" Type="stavke_primke" />
+      <Association Name="artikli_stavke_izdatnice" Member="stavke_izdatnices" ThisKey="id" OtherKey="id_artikla" Type="stavke_izdatnice" />
+      <Association Name="artikli_stavke_otpremnice" Member="stavke_otpremnices" ThisKey="id" OtherKey="id_artikla" Type="stavke_otpremnice" />
+      <Association Name="artikli_stavke_naloga_za_nabavu" Member="stavke_naloga_za_nabavus" ThisKey="id" OtherKey="id_artikla" Type="stavke_naloga_za_nabavu" />
+      <Association Name="artikli_stavke_narudzbenice" Member="stavke_narudzbenices" ThisKey="id" OtherKey="id_artikla" Type="stavke_narudzbenice" />
+      <Association Name="artikli_stavke_prednaloga_za_nabavu" Member="stavke_prednaloga_za_nabavus" ThisKey="id" OtherKey="id_artikla" Type="stavke_prednaloga_za_nabavu" />
+      <Association Name="artikli_stavke_naloga_za_skladistenje" Member="stavke_naloga_za_skladistenjes" ThisKey="id" OtherKey="id_artikla" Type="stavke_naloga_za_skladistenje" />
+      <Association Name="artikli_stavke_zahtjevnice" Member="stavke_zahtjevnices" ThisKey="id" OtherKey="id_artikla" Type="stavke_zahtjevnice" />
+      <Association Name="artikli_stavke_skladisnice" Member="stavke_skladisnices" ThisKey="id" OtherKey="id_artikla" Type="stavke_skladisnice" />
+      <Association Name="artikli_stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" Member="stavke_potvrde_o_uskladistenom_materijalu_za_ostale_posloves" ThisKey="id" OtherKey="id_artikla" Type="stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" />
+      <Association Name="artikli_stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" Member="stavke_potvrde_o_uskladistenom_materijalu_za_sitotisaks" ThisKey="id" OtherKey="id_artikla" Type="stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" />
+      <Association Name="artikli_stavke_otpremnice_od_dobavljaca" Member="stavke_otpremnice_od_dobavljacas" ThisKey="id" OtherKey="id_artikla" Type="stavke_otpremnice_od_dobavljaca" />
+      <Association Name="jedinica_mjere_artikli" Member="jedinica_mjere" ThisKey="id_jedinice_mjere" OtherKey="id" Type="jedinica_mjere" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.jedinica_mjere" Member="jedinica_mjeres">
+    <Type Name="jedinica_mjere">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="naziv" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="jedinica_mjere_artikli" Member="artiklis" ThisKey="id" OtherKey="id_jedinice_mjere" Type="artikli" />
+    </Type>
+  </Table>
+  <Table Name="dbo.otpremnica_od_dobavljaca" Member="otpremnica_od_dobavljacas">
+    <Type Name="otpremnica_od_dobavljaca">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="[podaci o kupcu]" Member="podaci_o_kupcu" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="[popis proizvoda]" Member="popis_proizvoda" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="otpremnica_od_dobavljaca_stavke_otpremnice_od_dobavljaca" Member="stavke_otpremnice_od_dobavljacas" ThisKey="id" OtherKey="id_otpremnice_od_dobavljaca" Type="stavke_otpremnice_od_dobavljaca" />
+    </Type>
+  </Table>
+  <Table Name="dbo.racun_od_dobavljaca" Member="racun_od_dobavljacas">
+    <Type Name="racun_od_dobavljaca">
+      <Column Name="br_racuna" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="adresa" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="cijena" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="racun_od_dobavljaca_stavke_racuna_od_dobavljaca" Member="stavke_racuna_od_dobavljacas" ThisKey="br_racuna" OtherKey="id_racuna_od_dobavljaca" Type="stavke_racuna_od_dobavljaca" />
+    </Type>
+  </Table>
+  <Table Name="dbo.primka" Member="primkas">
+    <Type Name="primka">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vrijeme" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="primka_stavke_primke" Member="stavke_primkes" ThisKey="id" OtherKey="id_primke" Type="stavke_primke" />
+    </Type>
+  </Table>
+  <Table Name="dbo.izdatnica" Member="izdatnicas">
+    <Type Name="izdatnica">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[vrsta materijala]" Member="vrsta_materijala" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="[broj komada]" Member="broj_komada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vrijeme" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="izdatnica_stavke_izdatnice" Member="stavke_izdatnices" ThisKey="id" OtherKey="id_izdatnice" Type="stavke_izdatnice" />
+      <Association Name="izdatnica_zahtjevnica" Member="zahtjevnicas" ThisKey="id" OtherKey="id_izdatnice" Type="zahtjevnica" />
+    </Type>
+  </Table>
+  <Table Name="dbo.otpremnica" Member="otpremnicas">
+    <Type Name="otpremnica">
+      <Column Name="[broj narudzbe]" Member="broj_narudzbe" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vrijeme" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="otpremnica_stavke_otpremnice" Member="stavke_otpremnices" ThisKey="broj_narudzbe" OtherKey="id_otpremnice" Type="stavke_otpremnice" />
+    </Type>
+  </Table>
+  <Table Name="dbo.narudzbenica" Member="narudzbenicas">
+    <Type Name="narudzbenica">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[vrsta materijala]" Member="vrsta_materijala" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[broj komada]" Member="broj_komada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_org_jed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vrijeme" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="narudzbenica_stavke_narudzbenice" Member="stavke_narudzbenices" ThisKey="id" OtherKey="id_narudzbencie" Type="stavke_narudzbenice" />
+      <Association Name="organizacijska_jedinica_narudzbenica" Member="organizacijska_jedinica" ThisKey="id_org_jed" OtherKey="id" Type="organizacijska_jedinica" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[organizacijska jedinica]" Member="organizacijska_jedinicas">
+    <Type Name="organizacijska_jedinica">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="naziv" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="organizacijska_jedinica_narudzbenica" Member="narudzbenicas" ThisKey="id" OtherKey="id_org_jed" Type="narudzbenica" />
+      <Association Name="organizacijska_jedinica_nalog_za_skladistenje" Member="nalog_za_skladistenjes" ThisKey="id" OtherKey="id_org_jed" Type="nalog_za_skladistenje" />
+    </Type>
+  </Table>
+  <Table Name="dbo.korisnici" Member="korisnicis">
+    <Type Name="korisnici">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[korisnicko ime]" Member="korisnicko_ime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lozinka" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ovlast" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_racuna_od_dobavljaca" Member="stavke_racuna_od_dobavljacas">
+    <Type Name="stavke_racuna_od_dobavljaca">
+      <Column Name="jel" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_racuna_od_dobavljaca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_racuna_od_dobavljaca" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="racun_od_dobavljaca_stavke_racuna_od_dobavljaca" Member="racun_od_dobavljaca" ThisKey="id_racuna_od_dobavljaca" OtherKey="br_racuna" Type="racun_od_dobavljaca" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_primke" Member="stavke_primkes">
+    <Type Name="stavke_primke">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_primke" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_primke" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="primka_stavke_primke" Member="primka" ThisKey="id_primke" OtherKey="id" Type="primka" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_izdatnice" Member="stavke_izdatnices">
+    <Type Name="stavke_izdatnice">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_izdatnice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_izdatnice" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="izdatnica_stavke_izdatnice" Member="izdatnica" ThisKey="id_izdatnice" OtherKey="id" Type="izdatnica" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_otpremnice" Member="stavke_otpremnices">
+    <Type Name="stavke_otpremnice">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_otpremnice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_otpremnice" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="otpremnica_stavke_otpremnice" Member="otpremnica" ThisKey="id_otpremnice" OtherKey="broj_narudzbe" Type="otpremnica" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.nalog_za_nabavu" Member="nalog_za_nabavus">
+    <Type Name="nalog_za_nabavu">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vrijeme" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="nalog_za_nabavu_stavke_naloga_za_nabavu" Member="stavke_naloga_za_nabavus" ThisKey="id" OtherKey="id_naloga" Type="stavke_naloga_za_nabavu" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_naloga_za_nabavu" Member="stavke_naloga_za_nabavus">
+    <Type Name="stavke_naloga_za_nabavu">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_naloga" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_naloga_za_nabavu" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="nalog_za_nabavu_stavke_naloga_za_nabavu" Member="nalog_za_nabavu" ThisKey="id_naloga" OtherKey="id" Type="nalog_za_nabavu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_narudzbenice" Member="stavke_narudzbenices">
+    <Type Name="stavke_narudzbenice">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_narudzbencie" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_narudzbenice" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="narudzbenica_stavke_narudzbenice" Member="narudzbenica" ThisKey="id_narudzbencie" OtherKey="id" Type="narudzbenica" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_prednaloga_za_nabavu" Member="stavke_prednaloga_za_nabavus">
+    <Type Name="stavke_prednaloga_za_nabavu">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_prednaloga" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_prednaloga_za_nabavu" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="prednalog_za_nabavu_stavke_prednaloga_za_nabavu" Member="prednalog_za_nabavu" ThisKey="id_prednaloga" OtherKey="id" Type="prednalog_za_nabavu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.prednalog_za_nabavu" Member="prednalog_za_nabavus">
+    <Type Name="prednalog_za_nabavu">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="vrijeme" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="prednalog_za_nabavu_stavke_prednaloga_za_nabavu" Member="stavke_prednaloga_za_nabavus" ThisKey="id" OtherKey="id_prednaloga" Type="stavke_prednaloga_za_nabavu" />
+    </Type>
+  </Table>
+  <Table Name="dbo.nalog_za_skladistenje" Member="nalog_za_skladistenjes">
+    <Type Name="nalog_za_skladistenje">
+      <Column Name="[broj narudzbe]" Member="broj_narudzbe" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="[Nalog izdao/la]" Member="Nalog_izdao_la" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="id_org_jed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="nalog_za_skladistenje_stavke_naloga_za_skladistenje" Member="stavke_naloga_za_skladistenjes" ThisKey="broj_narudzbe" OtherKey="id_naloga_za_skladistenje" Type="stavke_naloga_za_skladistenje" />
+      <Association Name="organizacijska_jedinica_nalog_za_skladistenje" Member="organizacijska_jedinica" ThisKey="id_org_jed" OtherKey="id" Type="organizacijska_jedinica" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_naloga_za_skladistenje" Member="stavke_naloga_za_skladistenjes">
+    <Type Name="stavke_naloga_za_skladistenje">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_naloga_za_skladistenje" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_naloga_za_skladistenje" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="nalog_za_skladistenje_stavke_naloga_za_skladistenje" Member="nalog_za_skladistenje" ThisKey="id_naloga_za_skladistenje" OtherKey="broj_narudzbe" Type="nalog_za_skladistenje" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_zahtjevnice" Member="stavke_zahtjevnices">
+    <Type Name="stavke_zahtjevnice">
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_zahtjevnice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_zahtjevnice" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="zahtjevnica_stavke_zahtjevnice" Member="zahtjevnica" ThisKey="id_zahtjevnice" OtherKey="id" Type="zahtjevnica" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.zahtjevnica" Member="zahtjevnicas">
+    <Type Name="zahtjevnica">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_izdatnice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="odgOsoba" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="zahtjevnica_stavke_zahtjevnice" Member="stavke_zahtjevnices" ThisKey="id" OtherKey="id_zahtjevnice" Type="stavke_zahtjevnice" />
+      <Association Name="izdatnica_zahtjevnica" Member="izdatnica" ThisKey="id_izdatnice" OtherKey="id" Type="izdatnica" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.skladisnica" Member="skladisnicas">
+    <Type Name="skladisnica">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="odgOsoba" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="skladisnica_stavke_skladisnice" Member="stavke_skladisnices" ThisKey="id" OtherKey="id_skladisnice" Type="stavke_skladisnice" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_skladisnice" Member="stavke_skladisnices">
+    <Type Name="stavke_skladisnice">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_skladisnice" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_skladisnice" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="skladisnica_stavke_skladisnice" Member="skladisnica" ThisKey="id_skladisnice" OtherKey="id" Type="skladisnica" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.potvrda_o_uskladistenom_materijalu_za_sitotisak" Member="potvrda_o_uskladistenom_materijalu_za_sitotisaks">
+    <Type Name="potvrda_o_uskladistenom_materijalu_za_sitotisak">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="odgOsoba" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="potvrda_o_uskladistenom_materijalu_za_sitotisak_stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" Member="stavke_potvrde_o_uskladistenom_materijalu_za_sitotisaks" ThisKey="id" OtherKey="id_potvrde_o_uskl_materijalu_za_sitotisak" Type="stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" />
+    </Type>
+  </Table>
+  <Table Name="dbo.potvrda_o_uskladistenom_materijalu_za_ostale_poslove" Member="potvrda_o_uskladistenom_materijalu_za_ostale_posloves">
+    <Type Name="potvrda_o_uskladistenom_materijalu_za_ostale_poslove">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="datum" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="odgOsoba" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="potvrda_o_uskladistenom_materijalu_za_ostale_poslove_stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" Member="stavke_potvrde_o_uskladistenom_materijalu_za_ostale_posloves" ThisKey="id" OtherKey="id_potvrde_za_ostale_poslove" Type="stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" Member="stavke_potvrde_o_uskladistenom_materijalu_za_ostale_posloves">
+    <Type Name="stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_potvrde_za_ostale_poslove" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="potvrda_o_uskladistenom_materijalu_za_ostale_poslove_stavke_potvrde_o_uskladistenom_materijalu_za_ostale_poslove" Member="potvrda_o_uskladistenom_materijalu_za_ostale_poslove" ThisKey="id_potvrde_za_ostale_poslove" OtherKey="id" Type="potvrda_o_uskladistenom_materijalu_za_ostale_poslove" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" Member="stavke_potvrde_o_uskladistenom_materijalu_za_sitotisaks">
+    <Type Name="stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_potvrde_o_uskl_materijalu_za_sitotisak" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="potvrda_o_uskladistenom_materijalu_za_sitotisak_stavke_potvrde_o_uskladistenom_materijalu_za_sitotisak" Member="potvrda_o_uskladistenom_materijalu_za_sitotisak" ThisKey="id_potvrde_o_uskl_materijalu_za_sitotisak" OtherKey="id" Type="potvrda_o_uskladistenom_materijalu_za_sitotisak" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stavke_otpremnice_od_dobavljaca" Member="stavke_otpremnice_od_dobavljacas">
+    <Type Name="stavke_otpremnice_od_dobavljaca">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_artikla" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_otpremnice_od_dobavljaca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kolicina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="artikli_stavke_otpremnice_od_dobavljaca" Member="artikli" ThisKey="id_artikla" OtherKey="id" Type="artikli" IsForeignKey="true" />
+      <Association Name="otpremnica_od_dobavljaca_stavke_otpremnice_od_dobavljaca" Member="otpremnica_od_dobavljaca" ThisKey="id_otpremnice_od_dobavljaca" OtherKey="id" Type="otpremnica_od_dobavljaca" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

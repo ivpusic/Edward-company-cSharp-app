@@ -1,0 +1,20 @@
+﻿<Window x:Class="PISApp.jediMjere"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="jediMjere" Height="300" Width="453" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Brisi" Height="23" HorizontalAlignment="Left" Margin="320,216,0,0" Name="deleteButton" VerticalAlignment="Top" Width="75" Click="deleteButton_Click" />
+        <Button Content="Uredi" Height="23" HorizontalAlignment="Left" Margin="220,216,0,0" Name="editButton" VerticalAlignment="Top" Width="75" Click="editButton_Click" />
+        <Button Content="Dodaj" Height="23" HorizontalAlignment="Left" Margin="12,59,0,0" Name="addButton" VerticalAlignment="Top" Width="75" Click="addButton_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="0,30,0,0" Name="nameJedMjere" VerticalAlignment="Top" Width="138" />
+        <Label Content="Naziv jedinice mjere" Height="28" HorizontalAlignment="Left" Margin="-1,7,0,0" Name="label1" VerticalAlignment="Top" />
+        <ListView Height="210" HorizontalAlignment="Left" Margin="144,0,0,0" Name="jediniceBox" VerticalAlignment="Top" Width="287">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100" Header="ID" DisplayMemberBinding="{Binding Path=id}"/>
+                    <GridViewColumn Width="180" Header="Naziv jedinice mjere" DisplayMemberBinding="{Binding Path=naziv}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

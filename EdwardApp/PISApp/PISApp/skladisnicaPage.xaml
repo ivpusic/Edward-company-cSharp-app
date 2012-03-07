@@ -1,0 +1,23 @@
+﻿<Window x:Class="PISApp.skladisnicaPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="skladisnicaPage" Height="358" Width="694">
+    <Grid>
+        <Button Content="Brisi" Height="39" HorizontalAlignment="Right" Margin="0,280,250,0" Name="deleteButton" VerticalAlignment="Top" Width="118" Click="deleteButton_Click" />
+        <Button Content="Uredi" Height="39" HorizontalAlignment="Left" Margin="428,280,0,0" Name="editButton" VerticalAlignment="Top" Width="117" Click="editButton_Click" />
+        <Button Content="Dodaj stavke" Height="34" HorizontalAlignment="Left" Margin="45,120,0,0" Name="addButton" VerticalAlignment="Top" Width="106" Click="addButton_Click" />
+        <Label Content="Datum" Height="28" HorizontalAlignment="Left" Margin="10,17,0,0" Name="Datum" VerticalAlignment="Top" />
+        <ListView Height="274" HorizontalAlignment="Left" Margin="195,0,0,0" Name="skladisniceBox" VerticalAlignment="Top" Width="477">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=id}" Header="ID" Width="120" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=datum}" Header="Datum" Width="150" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=odgOsoba}" Header="Odgovorna osoba" Width="200" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="17,38,0,0" Name="datumPicker" VerticalAlignment="Top" Width="172" />
+        <Label Content="Odgovorna osoba" Height="28" HorizontalAlignment="Left" Margin="10,67,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="17,91,0,0" Name="odgOsoba" VerticalAlignment="Top" Width="172" IsEnabled="False" />
+    </Grid>
+</Window>

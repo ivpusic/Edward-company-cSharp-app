@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="BarcodeReport.VS2008">
+</Property><Property Name="Solution File" Value="C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\BarcodeReport.VS2008.sln">
+</Property><Property Name="Date" Value="13. siječnja 2012.">
+</Property><Property Name="Time" Value="19:20:11">
+</Property></Properties><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="BarcodeReport.VS2008.csproj" Description="Project file successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\BarcodeReport.VS2008.csproj">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="App.xaml.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="WindowMain.xaml.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\WindowMain.xaml.cs">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="Properties\Settings.settings" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="Templates\BarcodeReport.xaml" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\Templates\BarcodeReport.xaml">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="Properties\Resources.resx" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="App.xaml" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\App.xaml">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="WindowMain.xaml" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\BarcodeReport\Backup\WindowMain.xaml">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="BarcodeReport.VS2008.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BarcodeReport.VS2008" Source="BarcodeReport.VS2008.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BarcodeReport.VS2008" Source="BarcodeReport.VS2008.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

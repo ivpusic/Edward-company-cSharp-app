@@ -1,0 +1,8 @@
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports\bin\Debug\CodeReason.Reports.dll
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports\bin\Debug\CodeReason.Reports.pdb
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports\obj\Debug\CodeReason.Reports.Properties.Resources.resources
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports\obj\Debug\ResGen.read.1.tlog
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports\obj\Debug\ResGen.write.1.tlog
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports\obj\Debug\CodeReason.Reports.dll
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports\obj\Debug\CodeReason.Reports.pdb

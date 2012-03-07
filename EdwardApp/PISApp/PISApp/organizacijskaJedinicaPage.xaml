@@ -1,0 +1,20 @@
+﻿<Window x:Class="PISApp.organizacijskaJedinicaPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="organizacijskaJedinicaPage" Height="280" Width="462">
+    <Grid>
+        <Label Content="Naziv organizacijske jedinice" Height="28" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,34,0,0" Name="nazivBox" VerticalAlignment="Top" Width="159" />
+        <ListView Height="200" HorizontalAlignment="Left" Margin="195,0,0,0" Name="orgJedBox" VerticalAlignment="Top" Width="245">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=id}" Header="ID" Width="60" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=naziv}" Header="Naziv organizacijske jedinice" Width="180" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Spremi" Height="40" HorizontalAlignment="Left" Margin="41,63,0,0" Name="addButton" VerticalAlignment="Top" Width="103" Click="addButton_Click" />
+        <Button Content="Uredi" Height="40" HorizontalAlignment="Left" Margin="325,201,0,0" Name="editButton" VerticalAlignment="Top" Width="103" Click="editButton_Click" />
+        <Button Content="Brisi" Height="40" HorizontalAlignment="Left" Margin="216,201,0,0" Name="deleteButton" VerticalAlignment="Top" Width="103" Click="deleteButton_Click" />
+    </Grid>
+</Window>

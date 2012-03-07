@@ -1,0 +1,5 @@
+* started work on implementing a Visifire interface for charts
+* removed ChartTest project
+* added feature to concatenate multiple ReportData objects to create a single report
+* added functionality to create reports with headers dynamically
+* tweaked one of the functions in InlineAggregateValue in order to support aggregation of TimeSpan values

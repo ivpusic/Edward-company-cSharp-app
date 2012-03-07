@@ -1,0 +1,21 @@
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\WindowMain.baml
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\WindowMain.g.cs
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\App.g.cs
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\SimpleReport_Content.g.cs
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\SimpleReport_MarkupCompile.cache
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\SimpleReport.g.resources
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\ResGen.read.1.tlog
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\ResGen.write.1.tlog
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\SimpleReport.CodeReason.Reports.Properties.Resources.resources
+C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\obj\Debug\SimpleReport.Properties.Resources.resources
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\WindowMain.baml
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\WindowMain.g.cs
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\App.g.cs
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\SimpleReport_Content.g.cs
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\SimpleReport_MarkupCompile.cache
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\SimpleReport.g.resources
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\SimpleReport.Properties.Resources.resources
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\ResGen.read.1.tlog
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\SimpleReport\obj\Debug\ResGen.write.1.tlog

@@ -1,0 +1,17 @@
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\bin\Debug\Templates\DynamicReport.xaml
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\bin\Debug\DynamicReport.exe
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\bin\Debug\DynamicReport.pdb
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\bin\Debug\CodeReason.Reports.dll
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\bin\Debug\CodeReason.Reports.pdb
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\WindowMain.baml
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\WindowMain.g.cs
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\App.g.cs
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\DynamicReport_Content.g.cs
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\DynamicReport_MarkupCompile.cache
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\DynamicReport.g.resources
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\DynamicReport.Properties.Resources.resources
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\ResGen.read.1.tlog
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\ResGen.write.1.tlog
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\DynamicReport.exe
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\Samples\DynamicReport\obj\Debug\DynamicReport.pdb

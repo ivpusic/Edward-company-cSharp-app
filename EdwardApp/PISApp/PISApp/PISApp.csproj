@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15FDA6B1-9784-4672-856D-A5E5F77AA30D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PISApp</RootNamespace>
+    <AssemblyName>PISApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="addJedMj.xaml.cs">
+      <DependentUpon>addJedMj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="addUsers.xaml.cs">
+      <DependentUpon>addUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="artikls.xaml.cs">
+      <DependentUpon>artikls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editArtikli.xaml.cs">
+      <DependentUpon>editArtikli.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editIzdatnica.xaml.cs">
+      <DependentUpon>editIzdatnica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editJmj.xaml.cs">
+      <DependentUpon>editJmj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editNalogZaNabavu.xaml.cs">
+      <DependentUpon>editNalogZaNabavu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editNalogZaSkladistenjePage.xaml.cs">
+      <DependentUpon>editNalogZaSkladistenjePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editNarudzbenica.xaml.cs">
+      <DependentUpon>editNarudzbenica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editOrgJedinica.xaml.cs">
+      <DependentUpon>editOrgJedinica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editOtpremnica.xaml.cs">
+      <DependentUpon>editOtpremnica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editPotvrdaOstaliProizvodi.xaml.cs">
+      <DependentUpon>editPotvrdaOstaliProizvodi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editPotvrdaSitotisak.xaml.cs">
+      <DependentUpon>editPotvrdaSitotisak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editPrednalogZaNabavu.xaml.cs">
+      <DependentUpon>editPrednalogZaNabavu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editPrimka.xaml.cs">
+      <DependentUpon>editPrimka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editRacunOdDobavljaca.xaml.cs">
+      <DependentUpon>editRacunOdDobavljaca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editRacunOdDobPageee.xaml.cs">
+      <DependentUpon>editRacunOdDobPageee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editSkladisnica.xaml.cs">
+      <DependentUpon>editSkladisnica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkaIzdatnice.xaml.cs">
+      <DependentUpon>editStavkaIzdatnice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkaNarudzbenice.xaml.cs">
+      <DependentUpon>editStavkaNarudzbenice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkaPrimke.xaml.cs">
+      <DependentUpon>editStavkaPrimke.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkeNalogaZaNabavuPage.xaml.cs">
+      <DependentUpon>editStavkeNalogaZaNabavuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkeNalogaZaSkladistenje.xaml.cs">
+      <DependentUpon>editStavkeNalogaZaSkladistenje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkeOtpremnice.xaml.cs">
+      <DependentUpon>editStavkeOtpremnice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkePotvrdeOstaliPosloviPage.xaml.cs">
+      <DependentUpon>editStavkePotvrdeOstaliPosloviPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkePotvrdeSitotisakPage.xaml.cs">
+      <DependentUpon>editStavkePotvrdeSitotisakPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkePrednalogaZaNabavuPage.xaml.cs">
+      <DependentUpon>editStavkePrednalogaZaNabavuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkeSkladisnicePage.xaml.cs">
+      <DependentUpon>editStavkeSkladisnicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editStavkeZahtjenicePage.xaml.cs">
+      <DependentUpon>editStavkeZahtjenicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="editZahtjevnica.xaml.cs">
+      <DependentUpon>editZahtjevnica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="izdatnicePage.xaml.cs">
+      <DependentUpon>izdatnicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="iznos.cs" />
+    <Compile Include="jediMjere.xaml.cs">
+      <DependentUpon>jediMjere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="logIn.cs" />
+    <Compile Include="nalogZaNabavuPage.xaml.cs">
+      <DependentUpon>nalogZaNabavuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="nalogZaSkladistenjePage.xaml.cs">
+      <DependentUpon>nalogZaSkladistenjePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NarudzbenicaPage.xaml.cs">
+      <DependentUpon>NarudzbenicaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="organizacijskaJedinicaPage.xaml.cs">
+      <DependentUpon>organizacijskaJedinicaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="otpremnicaPage.xaml.cs">
+      <DependentUpon>otpremnicaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pisModel.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pisModel.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="potvrdaOUskladistenomMaterijaluZaOstaleProizvodaPage.xaml.cs">
+      <DependentUpon>potvrdaOUskladistenomMaterijaluZaOstaleProizvodaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="potvrdaOuskladištenomMaterijaluZaSitotisakPage.xaml.cs">
+      <DependentUpon>potvrdaOuskladištenomMaterijaluZaSitotisakPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="prednalogZaNabavuPage.xaml.cs">
+      <DependentUpon>prednalogZaNabavuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="racunOdDobavljacaPage.xaml.cs">
+      <DependentUpon>racunOdDobavljacaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report.xaml.cs">
+      <DependentUpon>Report.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="skladisnicaPage.xaml.cs">
+      <DependentUpon>skladisnicaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkeIzdatnicePage.xaml.cs">
+      <DependentUpon>stavkeIzdatnicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkeNalogaZaSkladistenje.xaml.cs">
+      <DependentUpon>stavkeNalogaZaSkladistenje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkeNalogZaNabavu.xaml.cs">
+      <DependentUpon>stavkeNalogZaNabavu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkeNarudzbenice.xaml.cs">
+      <DependentUpon>stavkeNarudzbenice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkeOtpremnicePage.xaml.cs">
+      <DependentUpon>stavkeOtpremnicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkePotvrdeOstaliProizvodi.xaml.cs">
+      <DependentUpon>stavkePotvrdeOstaliProizvodi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkePotvrdeZaSitotisak.xaml.cs">
+      <DependentUpon>stavkePotvrdeZaSitotisak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkePrednalogaZaNabavuPage.xaml.cs">
+      <DependentUpon>stavkePrednalogaZaNabavuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkePrimkePage.xaml.cs">
+      <DependentUpon>stavkePrimkePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkeRacunaOdDobPage.xaml.cs">
+      <DependentUpon>stavkeRacunaOdDobPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkeSkladisnicePage.xaml.cs">
+      <DependentUpon>stavkeSkladisnicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stavkeZahtjevnicePage.xaml.cs">
+      <DependentUpon>stavkeZahtjevnicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="zahtjevnicaPage.xaml.cs">
+      <DependentUpon>zahtjevnicaPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="addJedMj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="addUsers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="artikls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editArtikli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editIzdatnica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editJmj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editNalogZaNabavu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editNalogZaSkladistenjePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editNarudzbenica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editOrgJedinica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editOtpremnica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editPotvrdaOstaliProizvodi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editPotvrdaSitotisak.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editPrednalogZaNabavu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editPrimka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editRacunOdDobavljaca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editRacunOdDobPageee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editSkladisnica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkaIzdatnice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkaNarudzbenice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkaPrimke.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkeNalogaZaNabavuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkeNalogaZaSkladistenje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkeOtpremnice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkePotvrdeOstaliPosloviPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkePotvrdeSitotisakPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkePrednalogaZaNabavuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkeSkladisnicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editStavkeZahtjenicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editZahtjevnica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="izdatnicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="jediMjere.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="nalogZaNabavuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="nalogZaSkladistenjePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NarudzbenicaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="organizacijskaJedinicaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="otpremnicaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="potvrdaOUskladistenomMaterijaluZaOstaleProizvodaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="potvrdaOuskladištenomMaterijaluZaSitotisakPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="prednalogZaNabavuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="primkaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="racunOdDobavljacaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Report.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="skladisnicaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkeIzdatnicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkeNalogaZaSkladistenje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkeNalogZaNabavu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkeNarudzbenice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkeOtpremnicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkePotvrdeOstaliProizvodi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkePotvrdeZaSitotisak.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkePrednalogaZaNabavuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkePrimkePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkeRacunaOdDobPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkeSkladisnicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stavkeZahtjevnicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="zahtjevnicaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="primkaPage.xaml.cs">
+      <DependentUpon>primkaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="pisModel.dbml.layout">
+      <DependentUpon>pisModel.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="pisModel.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>pisModel.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fotolia_1098016_subscription_l.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

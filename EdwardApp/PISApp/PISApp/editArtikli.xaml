@@ -1,0 +1,18 @@
+﻿<Window x:Class="PISApp.editArtikli"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="editArtikli" Height="292" Width="202">
+    <Grid>
+        <Label Content="Naziv" Height="28" HorizontalAlignment="Left" Margin="12,42,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Jedinična cijena" Height="28" HorizontalAlignment="Left" Margin="12,80,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Vrsta" Height="28" HorizontalAlignment="Left" Margin="12,118,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="ID jedinice mjere" Height="28" HorizontalAlignment="Left" Margin="12,156,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,102,0,0" Name="jedCijenaBox" VerticalAlignment="Top" Width="153" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,139,0,0" Name="vrstaBox" VerticalAlignment="Top" Width="153" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="14,63,0,0" Name="nazivBox" VerticalAlignment="Top" Width="151" />
+        <Button Content="Spremi" Height="38" HorizontalAlignment="Left" Margin="36,210,0,0" Name="saveButton" VerticalAlignment="Top" Width="110" Click="saveButton_Click" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="14,181,0,0" Name="idJedCijBox" VerticalAlignment="Top" Width="151" />
+        <Label Content="ID" Height="28" HorizontalAlignment="Left" Margin="11,0,0,0" Name="label5" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="14,22,0,0" Name="idBox" VerticalAlignment="Top" Width="151" IsEnabled="False" />
+    </Grid>
+</Window>

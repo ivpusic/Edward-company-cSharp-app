@@ -1,0 +1,31 @@
+﻿<Window x:Class="PISApp.artikls"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="artikls" Height="300" Width="790">
+    <Grid>
+        <Label Content="Naziv" Height="28" HorizontalAlignment="Left" Margin="10,0,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Jedinična cijena" Height="28" HorizontalAlignment="Left" Margin="10,38,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Vrsta" Height="28" HorizontalAlignment="Left" Margin="10,82,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="ID jedinice mjere" Height="28" HorizontalAlignment="Left" Margin="10,124,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="10,57,0,0" Name="jedCijena" VerticalAlignment="Top" Width="169" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,103,0,0" Name="vrstaBox" VerticalAlignment="Top" Width="167" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="10,19,0,0" Name="nazivBox" VerticalAlignment="Top" Width="169" />
+        <Button Content="Briši" Height="35" HorizontalAlignment="Left" Margin="373,222,0,0" Name="deleteButton" VerticalAlignment="Top" Width="117" Click="deleteButton_Click" />
+        <Button Content="Spremi" Height="41" HorizontalAlignment="Left" Margin="39,175,0,0" Name="saveButton" VerticalAlignment="Top" Width="107" Click="saveButton_Click" />
+        <Button Content="Uredi" Height="35" HorizontalAlignment="Left" Margin="496,222,0,0" Name="editButton" VerticalAlignment="Top" Width="116" Click="editButton_Click" />
+        <ListView Height="204" HorizontalAlignment="Left" Margin="185,12,0,0" Name="artikliListBox" VerticalAlignment="Top" Width="583">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Šifra artikla" Width="150" DisplayMemberBinding="{Binding Path=id}"/>
+                    <GridViewColumn Header="Naziv" Width="150" DisplayMemberBinding="{Binding Path=naziv}"/>
+                    <GridViewColumn Header="Jedinična cijena" Width="150" DisplayMemberBinding="{Binding Path=jedinicna_cijena}"/>
+                    <GridViewColumn Header="Vrsta" Width="150" DisplayMemberBinding="{Binding Path=vrsta}"/>
+                    <GridViewColumn Header="ID jedinice mjere" Width="150" DisplayMemberBinding="{Binding Path=id_jedinice_mjere}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="12,146,0,0" Name="jedMjCombo" VerticalAlignment="Top" Width="167" SelectionChanged="jedMjCombo_SelectionChanged" />
+    </Grid>
+
+
+</Window>

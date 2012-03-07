@@ -1,0 +1,8 @@
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports.Charts.Visifire\bin\Debug\CodeReason.Reports.Charts.Visifire.dll
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports.Charts.Visifire\bin\Debug\CodeReason.Reports.Charts.Visifire.pdb
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports.Charts.Visifire\bin\Debug\CodeReason.Reports.dll
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports.Charts.Visifire\bin\Debug\WPFVisifire.Charts.dll
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports.Charts.Visifire\bin\Debug\CodeReason.Reports.pdb
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports.Charts.Visifire\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports.Charts.Visifire\obj\Debug\CodeReason.Reports.Charts.Visifire.dll
+C:\Users\Ivan\Desktop\PISapp aplikacija\PISapppp\CodeReason.Reports.Charts.Visifire\obj\Debug\CodeReason.Reports.Charts.Visifire.pdb

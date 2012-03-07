@@ -1,0 +1,26 @@
+﻿<Window x:Class="PISApp.nalogZaSkladistenjePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="nalogZaSkladistenjePage" Height="357" Width="782">
+    <Grid Width="729">
+        <Button Content="Brisi" Height="39" HorizontalAlignment="Left" Margin="339,267,0,0" Name="deleteButton" VerticalAlignment="Top" Width="118" Click="deleteButton_Click" />
+        <Button Content="Uredi" Height="39" HorizontalAlignment="Left" Margin="463,267,0,0" Name="editButton" VerticalAlignment="Top" Width="117" Click="editButton_Click" />
+        <Button Content="Dodaj stavke" Height="34" HorizontalAlignment="Left" Margin="41,168,0,0" Name="addButton" VerticalAlignment="Top" Width="106" Click="addButton_Click" />
+        <Label Content="Datum" Height="28" HorizontalAlignment="Left" Margin="3,16,0,0" Name="Datum" VerticalAlignment="Top" />
+        <ListView Height="264" HorizontalAlignment="Left" Margin="194,0,0,0" Name="naloziListBox" VerticalAlignment="Top" Width="535">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=broj_narudzbe}" Header="ID" Width="80" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=datum}" Header="Datum" Width="150" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Nalog_izdao_la}" Header="Odgovorna osoba" Width="150" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=id_org_jed}" Header="ID Organizacijske jedinice" Width="150" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="1,38,0,0" Name="datumPicker" VerticalAlignment="Top" Width="187" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="0,88,0,0" Name="odgOsobaBox" VerticalAlignment="Top" Width="188" IsEnabled="False" Text="" />
+        <Label Content="Odgovorna osoba" Height="28" HorizontalAlignment="Left" Margin="1,67,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Organizacijska jedinca" Height="28" HorizontalAlignment="Left" Margin="2,117,0,0" Name="label2" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="1,139,0,0" Name="orgJedBox" VerticalAlignment="Top" Width="187" />
+    </Grid>
+</Window>

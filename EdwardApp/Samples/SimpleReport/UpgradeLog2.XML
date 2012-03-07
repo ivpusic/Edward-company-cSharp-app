@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SimpleReport.VS2008">
+</Property><Property Name="Solution File" Value="C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\SimpleReport.VS2008.sln">
+</Property><Property Name="Date" Value="13. siječnja 2012.">
+</Property><Property Name="Time" Value="20:39:58">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="SimpleReport.VS2008.csproj" Description="Project file successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\SimpleReport.VS2008.csproj">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="App.xaml.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="WindowMain.xaml.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\WindowMain.xaml.cs">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="Properties\Settings.settings" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="Templates\SimpleReport.xaml" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\Templates\SimpleReport.xaml">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="Properties\Resources.resx" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="App.xaml" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\App.xaml">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="WindowMain.xaml" Description="File successfully backed up as C:\Users\Ivan\Desktop\PISapp\Samples\SimpleReport\Backup1\WindowMain.xaml">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="SimpleReport.VS2008.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SimpleReport.VS2008" Source="SimpleReport.VS2008.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SimpleReport.VS2008" Source="SimpleReport.VS2008.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
